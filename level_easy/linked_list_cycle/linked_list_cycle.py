@@ -9,9 +9,9 @@ class Solution:
         hare = head
         turtle = head
 
-        while turtle and turtle.next :
-            hare = hare.next
-            turtle = turtle.next.next
+        while hare and hare.next :
+            turtle = turtle.next
+            hare = hare.next.next
 
             if turtle == hare :
                 return True
